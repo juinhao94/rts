@@ -24,6 +24,7 @@ def start_sweep():
     
 ### Change auto/manual mode
 def override_sweep():
+    print("Status >>> Overidding parameter sweep")
     print("Status >>> Parameter sweep has been overridden")
     tello.terminate_sweep()
 
