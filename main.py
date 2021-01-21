@@ -23,7 +23,7 @@ def start_sweep():
     
 ### Change auto/manual mode
 def override_sweep():
-    print("Parameter sweep overridden")
+    print("Parameter sweep has been overridden")
     tello.terminate_sweep()
 
 
@@ -41,7 +41,7 @@ def takeoff():
     print("Status >>> Drone is ready for flight")
 
     
-### 
+### Drone move back to Checkpoint
 def reset_position():
     print("Action >>> Move back to Checkpoint 0")
     tello.reset_position()
@@ -62,13 +62,13 @@ def land():
     
 ### Drone move forward
 def forward():
-    print("Action >>> Move forward 10cm")
+    print("Action >>> Move forward 10 units")
     tello.forward()
 
 
 ### Drone move backward
 def back():
-    print("Action >>> Move backward 10cm")
+    print("Action >>> Move backward 10 units")
     tello.back()
 
 
