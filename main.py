@@ -17,13 +17,14 @@ root.geometry('800x400') # Window Size (width x height)
 
 ### Start to sweep within preplan route
 def start_sweep():
-    print("Initiate parameter sweep")
+    print("Status >>> Initiating parameter sweep")
+    print("Status >>> Parameter sweep is running...")
     tello.run_sweep()
 
     
 ### Change auto/manual mode
 def override_sweep():
-    print("Parameter sweep has been overridden")
+    print("Status >>> Parameter sweep has been overridden")
     tello.terminate_sweep()
 
 
@@ -38,7 +39,7 @@ def quit_dashboard():
 def takeoff():
     print("Action >>> Drone is taking off...")
     tello.takeoff()
-    print("Status >>> Drone is ready for flight")
+    print("Status >>> Drone is ready for flight.")
 
     
 ### Drone move back to Checkpoint
