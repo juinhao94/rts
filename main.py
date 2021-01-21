@@ -25,7 +25,6 @@ def start_sweep():
 ### Change auto/manual mode
 def override_sweep():
     print("Status >>> Overidding parameter sweep")
-    print("Status >>> Parameter sweep has been overridden")
     tello.terminate_sweep()
 
 
@@ -94,7 +93,6 @@ def turn_right():
 # Prepare for landing button
 photoReady = PhotoImage(file="ready.png")
 btnReady = Button(root, image=photoReady, text="Ready for landing", command=ready_to_land, height=50, width=120, compound=TOP)
-#readyToLandButton = Button(top, height=2, width=15, text="Prepare to land", command=ready_to_land)
 
 # Land button
 photoLand = PhotoImage(file="drone_down.png")
@@ -163,6 +161,7 @@ btnLand.grid(row=4, column=7)
 
 # -- Row 6 buttons --
 btnQuit.grid(row=6, column=5)
+
 
 
 # Event looping in this controller window
