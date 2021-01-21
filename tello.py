@@ -126,13 +126,13 @@ class Tello():
         self.parameter_sweep_lock = False
 
     def forward(self):
-        self.send("forward 10")
+        self.send("Move Forward 10 units")
 
     def back(self):
-        self.send("back 10")
+        self.send("Move Backward 10 units")
 
     def rotate_left(self):
-        self.send("cw 90")
+        self.send("CW 90")
 
     def rotate_right(self):
-        self.send("ccw 90")
+        self.send("CCW 90")
